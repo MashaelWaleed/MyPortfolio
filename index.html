@@ -208,9 +208,22 @@
     <section class="projects" id="projects">
       <h2 class="heading">Projects</h2>
 
+      <!-- Category Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="programming">
+          Programming
+        </button>
+        <button class="filter-btn" data-filter="data-analysis">
+          Data Analysis
+        </button>
+      </div>
+
       <div class="projects-container">
+        <!-- ==================== PROGRAMMING PROJECTS ==================== -->
+
         <!-- Project Card 1 -->
-        <div class="project-box">
+        <div class="project-box" data-category="programming">
           <img src="image/GitSavvy.png" alt="GitSavvy Platform" />
           <div class="project-layer">
             <h4>GitSavvy</h4>
@@ -225,7 +238,7 @@
         </div>
 
         <!-- Project Card 2 -->
-        <div class="project-box">
+        <div class="project-box" data-category="programming">
           <img src="image/Magical.png" alt="The Magical Bubble Game" />
           <div class="project-layer">
             <h4>The Magical Bubble</h4>
@@ -242,7 +255,7 @@
         </div>
 
         <!-- Project Card 3 -->
-        <div class="project-box">
+        <div class="project-box" data-category="programming">
           <img
             src="image/little_leaf.png"
             alt="Little Leaf Botanical E-commerce"
@@ -263,13 +276,10 @@
         </div>
 
         <!-- Project Card 4 -->
-        <div class="project-box">
-          <img
-            src="image/ProgClub.png"
-            alt="Little Leaf Botanical E-commerce"
-          />
+        <div class="project-box" data-category="programming">
+          <img src="image/ProgClub.png" alt="Programming Club Website" />
           <div class="project-layer">
-            <h4>Programming club website</h4>
+            <h4>Programming Club Website</h4>
             <p>
               Participated in building the official web application for the
               Programming Club. The platform serves as a dynamic community
@@ -281,25 +291,46 @@
           </div>
         </div>
 
-        <!-- Project Card 5
-        <div class="project-box">
+        <!-- ==================== DATA ANALYSIS PROJECTS ==================== -->
+
+        <!-- Data Analysis Card: Excel Sales Dashboard -->
+        <div class="project-box" data-category="data-analysis">
           <img
-            src="image/ProgClub.png"
-            alt="Little Leaf Botanical E-commerce"
+            src="image/Sales.png"
+            alt="Interactive Retail Sales Dashboard in Excel"
           />
           <div class="project-layer">
-            <h4>Programming club website</h4>
+            <h4>Interactive Retail Sales Dashboard</h4>
             <p>
-              Participated in building the official web application for the
-               . The platform serves as a dynamic community
-              portal, Through Summer Training at Nexcore.
+              End-to-end ETL and data modeling in Excel using Power Query, Power
+              Pivot, and DAX to analyze multi-branch revenue trends, brand
+              performance, and customer metrics with dynamic slicers.
             </p>
-            <a href="https://www.progg.club/" target="_blank"
+            <a href="https://github.com/MashaelWaleed/retail-sales-excel-dashboard" target="_blank"
               ><i class="bx bx-link-external"></i
             ></a>
           </div>
-        </div> -->
-      </div>
+        </div>
+
+        <!-- Data Analysis Card 1  -->
+        <!-- <div class="project-box" data-category="data-analysis">
+          <img
+            src="image/dashboard_preview.png"
+            alt="Interactive Sales & KPI Dashboard"
+          />
+          <div class="project-layer">
+            <h4>Sales Analytics Dashboard</h4>
+            <p>
+              End-to-end data cleaning with Python (Pandas) and interactive KPI
+              visualization built in Power BI / Excel to uncover revenue trends
+              and customer segments.
+            </p>
+            <a href="https://github.com/MashaelWaleed" target="_blank"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+        </div>
+      </div> -->
     </section>
 
     <section class="courses" id="courses">

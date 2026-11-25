@@ -36,3 +36,25 @@ function changeImg(x, image) {
 
   if (x == 2) image.src = "image/myLogo.jpg";
 }
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectBoxes = document.querySelectorAll(".project-box");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Update active button state
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    const filterValue = button.getAttribute("data-filter");
+
+    projectBoxes.forEach((box) => {
+      const category = box.getAttribute("data-category");
+      if (filterValue === "all" || category === filterValue) {
+        box.classList.remove("hide");
+      } else {
+        box.classList.add("hide");
+      }
+    });
+  });
+});
